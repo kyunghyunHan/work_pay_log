@@ -1,0 +1,8 @@
+[package]
+name = "lstm_with_rust"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+candle-core = {version="0.5.1" }
+candle-nn = "0.5.1"
