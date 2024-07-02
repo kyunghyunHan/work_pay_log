@@ -1,5 +1,5 @@
 use candle_core::{Device, Tensor,DType};
-use candle_nn::{init, GRUConfig, Linear, VarBuilder, LSTM, RNN,LSTMConfig,VarMap,Optimizer};
+use candle_nn::{VarBuilder, LSTM, RNN,LSTMConfig,VarMap,Optimizer};
 use std::collections::HashMap;
 #[derive(Debug)]
 struct Net {
@@ -31,7 +31,7 @@ impl Net {
         Ok(xs)
     }
 }
-pub async fn main() ->candle_core::Result<()> {
+pub  fn main() ->candle_core::Result<()> {
     let input_str = "apple";
     let label_str = "pple!";
 
